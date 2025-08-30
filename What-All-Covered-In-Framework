@@ -1,0 +1,16 @@
+
+
+[Reference - https://youtu.be/n2Kl30ZHK7k?si=px7d4P3lAFkTG_1c]
+Parallel-execution | Tags in Cucumber Framework
+    1. Once Tags are used above Feature
+            When used this will be applicable to all scenarios
+    2. Once tags are used above Scenario/ Scenario-Outline
+            When used this will be applicable to only specific scenario
+    3. Once 2 different tags are used above scenario or feature
+            When used this will applicable to same as aove
+
+Usage: Add
+    1. tags = "@Smoke", "@Sanity", "@Regression", "Prod",
+    2. tags = "@Smoke or @Sanity", [which ever has this 2 tags in the feature file will be executed parallel]
+    3. tags = "not @prod" [if used this way then this particular tags will be excluded when test run]
+    4. tags = "@All" [this tags will be used above feature only it means it will inherit all such tags present under scenario will be executed]

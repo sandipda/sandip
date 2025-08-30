@@ -1,0 +1,1 @@
+{"afc16fadcccb8772f8a3ff49554b45d":{"statistic":{"failed":1,"broken":0,"skipped":0,"passed":0,"unknown":0,"total":1},"items":[{"uid":"bfa889d8badecfe2","status":"failed","statusDetails":"❌ Title mismatch! expected:<Test login[343]> but was:<Test login[]>","time":{"start":1756265159077,"stop":1756265233533,"duration":74456}}]}}
