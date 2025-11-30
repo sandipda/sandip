@@ -1,14 +1,13 @@
-package runners;
+package runner;
 
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@RunWith(Cucumber.class)
+@RunWith(Cucumber.class) // required import io.cucumber.junit.Cucumber; as MANDATORY
 @CucumberOptions(
-        // <-- your features are in projectRoot/features
-        features = "features//login.feature",
-        glue = {"stepdefinitions", "hooks"},   // your steps + Hooks package
+        features = "features//test_GUI_Elements.feature",
+        glue = {"stepDef", "hooks"},
         dryRun = false,
         monochrome = true,
         plugin = {
@@ -20,12 +19,6 @@ import org.junit.runner.RunWith;
         }
 )
 public class TestRunner {
+
+
 }
-
-
-
-//run this below in terminal to run allure report
-// npm install -g allure-commandline --save -dev
-
-// To-generate report pass report
-// allure generate  allure-results --clean -o allure-report
